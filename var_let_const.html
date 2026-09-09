@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>//global variable
+        var fname = "John";
+        var fname = "Doe";//redeclare allowed
+        fname = "Smith";//reassign allowed
+        document.write(fname + "<br>");
+    </script>
+
+    <script>//block scope variable
+        let lname = "John";
+        //let lname = "Doe"; // This will cause an error
+        lname = "Smith";//reassign allowed
+        document.write(lname + "<br>");
+    </script>
+
+    <script>
+        const c_name = "TCS";
+        //const c_name = "Infosys"; // This will cause an error
+        //c_name = "Wipro"; // reassign not allowed
+        document.write(c_name + "<br>");
+    </script>
+
+</body>
+</html>
